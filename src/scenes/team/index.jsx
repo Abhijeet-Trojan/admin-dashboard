@@ -6,6 +6,7 @@ import AdminPanelSettingsOutlinedIcon from "@mui/icons-material/AdminPanelSettin
 import LockOpenOutlinedIcon from "@mui/icons-material/LockOpenOutlined";
 import SecurityOutlinedIcon from "@mui/icons-material/SecurityOutlined";
 import Header from "../../components/Header";
+import { borderBottom } from "@mui/system";
 
 const Team = () => {
     const theme = useTheme();
@@ -46,7 +47,29 @@ const Team = () => {
     return (
         <Box m="20px">
             <Header title="Team" subtitle="Managing team menmber" />
-            <Box m="40px 0 0 0" height="75vh" >
+            <Box m="40px 0 0 0" height="70vh" sx={{
+                "& .MuiDataGrid-root": {
+                    border: "none"
+                },
+                "& .MuiDataGrid-cell": {
+                    borderBottom: "none"
+                },
+                "& .name-column--cell": {
+                    color: colors.greenAccent[300]
+                },
+                "& .MuiDataGrid-columnHeaders": {
+                    backgroundColor: colors.blueAccent[700],
+                    borderBottom: "none"
+                },
+                "& .MuiDataGrid-virtualScroller": {
+                    backgroundColor: colors.primary[400]
+                },
+                "& .MuiDataGrid-footerContainer": {
+                    borderTop: "none",
+                    backgroundColor: colors.blueAccent[700]
+                }
+            }}
+            >
                 <DataGrid 
                     rows={mockDataTeam}
                     columns={columns}
