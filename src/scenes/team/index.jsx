@@ -51,9 +51,6 @@ const Team = () => {
                 "& .MuiDataGrid-root": {
                     border: "none"
                 },
-                "& .MuiDataGrid-cell": {
-                    borderBottom: "none"
-                },
                 "& .name-column--cell": {
                     color: colors.greenAccent[300]
                 },
@@ -67,7 +64,10 @@ const Team = () => {
                 "& .MuiDataGrid-footerContainer": {
                     borderTop: "none",
                     backgroundColor: colors.blueAccent[700]
-                }
+                },
+                "& .MuiDataGrid-cell": {
+                    borderBottom: "none !important"
+                },
             }}
             >
                 <DataGrid 
