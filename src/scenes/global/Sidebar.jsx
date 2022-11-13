@@ -1,20 +1,20 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { ProSidebar, Menu, MenuItem } from 'react-pro-sidebar';
 import "react-pro-sidebar/dist/css/styles.css"
-import { Box, IconButton, Typography, useTheme } from '@mui/material';
 import { Link } from "react-router-dom";
 import { tokens } from "../../theme";
+import { Box, IconButton, Typography, useTheme } from '@mui/material';
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
 import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
-import HelpOutlinedIcon from "@mui/icons-material/HelpOutlined";
 import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
-// import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutlined";
-// import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
-// import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
+import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutlined";
+// import HelpOutlinedIcon from "@mui/icons-material/HelpOutlined";
+import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
+import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 
 
@@ -49,7 +49,7 @@ const Sidebar = () => {
                     background: `${colors.primary[400]} !important`
                 },
                 "& .pro-icon-wrapper": {
-                    backgroundColor: `tranparent !important`
+                    backgroundColor: `transparent !important`
                 },
                 "& .pro-inner-item": {
                     padding: `5px 35px 5px 20px !important`
@@ -117,7 +117,7 @@ const Sidebar = () => {
                         selected={selected}
                         setSelected={setSelected}
                     />
-                    {/* <Typography
+                    <Typography
                         variant="h6"
                         color={colors.grey[300]}
                         sx={{
@@ -125,7 +125,7 @@ const Sidebar = () => {
                         }}
                     >
                         Data
-                    </Typography> */}
+                    </Typography>
                     <Item 
                         title="Manage Team"
                         to="/team"
@@ -161,13 +161,20 @@ const Sidebar = () => {
                         selected={selected}
                         setSelected={setSelected}
                     />
-                    <Item 
+                    {/* <Item 
                         title="FAQ Page"
                         to="/faq"
                         icon={<HelpOutlinedIcon />}
                         selected={selected}
                         setSelected={setSelected}
-                    />
+                    /> */}
+                    <Typography
+                      variant="h6"
+                      color={colors.grey[300]}
+                      sx={{ m: "15px 0 5px 20px" }}
+                    >
+                      Charts
+                    </Typography>
                     <Item 
                         title="Bar Charts"
                         to="/bar"
@@ -175,7 +182,7 @@ const Sidebar = () => {
                         selected={selected}
                         setSelected={setSelected}
                     />
-                    {/* <Item 
+                    <Item 
                         title="Pie Charts"
                         to="/pie"
                         icon={<PieChartOutlineOutlinedIcon />}
@@ -195,7 +202,7 @@ const Sidebar = () => {
                         icon={<MapOutlinedIcon />}
                         selected={selected}
                         setSelected={setSelected}
-                    /> */}
+                    />
                 </Box>
                 </Menu>
             </ProSidebar>

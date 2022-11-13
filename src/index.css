@@ -8,6 +8,8 @@ body,
   height: 100%;
   width: 100%;
   font-family: 'Source Sans Pro', sans-serif;
+  overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .app{
