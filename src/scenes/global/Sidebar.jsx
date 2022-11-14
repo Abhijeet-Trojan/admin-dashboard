@@ -10,7 +10,7 @@ import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
 import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
-import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
+// import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
 import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutlined";
 // import HelpOutlinedIcon from "@mui/icons-material/HelpOutlined";
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
@@ -175,13 +175,13 @@ const Sidebar = () => {
                     >
                       Charts
                     </Typography>
-                    <Item 
+                    {/* <Item 
                         title="Bar Charts"
                         to="/bar"
                         icon={<BarChartOutlinedIcon />}
                         selected={selected}
                         setSelected={setSelected}
-                    />
+                    /> */}
                     <Item 
                         title="Pie Charts"
                         to="/pie"
