@@ -16,6 +16,7 @@ import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutl
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
+// import profile from '../../../public/assets/profile.png';
 
 
 
@@ -97,7 +98,7 @@ const Sidebar = () => {
                                     alt="profile-user"
                                     width="100px"
                                     height="100px"
-                                    src={`../../assets/profile.png`}
+                                    src="./assets/profile.png"
                                     style={{ cursor: 'pointer', borderRadius: '50%'}}
                                 />
                             </Box>
