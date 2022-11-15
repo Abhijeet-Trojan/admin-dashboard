@@ -1,7 +1,7 @@
 {
   "name": "react-admin",
   "version": "0.1.0",
-  "homepage": "https://myusername.github.io/admin-dashboard",
+  "homepage": "https://myusername.github.io/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",
